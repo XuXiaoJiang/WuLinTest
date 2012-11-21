@@ -22,6 +22,7 @@
 		6A219742165C8B8500C8174D /* WLMasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A219740165C8B8500C8174D /* WLMasterViewController_iPad.xib */; };
 		6A219745165C8B8500C8174D /* WLDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A219743165C8B8500C8174D /* WLDetailViewController_iPhone.xib */; };
 		6A219748165C8B8500C8174D /* WLDetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A219746165C8B8500C8174D /* WLDetailViewController_iPad.xib */; };
+		6A21975C165CB96C00C8174D /* WLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A21975B165CB96C00C8174D /* WLObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		6A219741165C8B8500C8174D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WLMasterViewController_iPad.xib; sourceTree = "<group>"; };
 		6A219744165C8B8500C8174D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WLDetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		6A219747165C8B8500C8174D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WLDetailViewController_iPad.xib; sourceTree = "<group>"; };
+		6A21975A165CB96C00C8174D /* WLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLObject.h; sourceTree = "<group>"; };
+		6A21975B165CB96C00C8174D /* WLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 		6A219725165C8B8500C8174D /* WuLin */ = {
 			isa = PBXGroup;
 			children = (
+				6A219726165C8B8500C8174D /* Supporting Files */,
 				6A21972E165C8B8500C8174D /* WLAppDelegate.h */,
 				6A21972F165C8B8500C8174D /* WLAppDelegate.m */,
 				6A219737165C8B8500C8174D /* WLMasterViewController.h */,
@@ -102,7 +106,10 @@
 				6A219740165C8B8500C8174D /* WLMasterViewController_iPad.xib */,
 				6A219743165C8B8500C8174D /* WLDetailViewController_iPhone.xib */,
 				6A219746165C8B8500C8174D /* WLDetailViewController_iPad.xib */,
-				6A219726165C8B8500C8174D /* Supporting Files */,
+				6A21974E165C8D4C00C8174D /* Controllers */,
+				6A21974F165C8D4C00C8174D /* Managers */,
+				6A219750165C8D4C00C8174D /* Models */,
+				6A219751165C8D4C00C8174D /* Views */,
 			);
 			path = WuLin;
 			sourceTree = "<group>";
@@ -119,6 +126,44 @@
 				6A219735165C8B8500C8174D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A21974E165C8D4C00C8174D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6A21974F165C8D4C00C8174D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6A219750165C8D4C00C8174D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6A219759165CB96C00C8174D /* Super */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6A219751165C8D4C00C8174D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6A219759165CB96C00C8174D /* Super */ = {
+			isa = PBXGroup;
+			children = (
+				6A21975A165CB96C00C8174D /* WLObject.h */,
+				6A21975B165CB96C00C8174D /* WLObject.m */,
+			);
+			path = Super;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +240,7 @@
 				6A219730165C8B8500C8174D /* WLAppDelegate.m in Sources */,
 				6A219739165C8B8500C8174D /* WLMasterViewController.m in Sources */,
 				6A21973C165C8B8500C8174D /* WLDetailViewController.m in Sources */,
+				6A21975C165CB96C00C8174D /* WLObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +348,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WuLin/WuLin-Prefix.pch";
 				INFOPLIST_FILE = "WuLin/WuLin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -313,6 +360,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WuLin/WuLin-Prefix.pch";
 				INFOPLIST_FILE = "WuLin/WuLin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

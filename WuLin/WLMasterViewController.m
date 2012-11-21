@@ -7,8 +7,10 @@
 //
 
 #import "WLMasterViewController.h"
-
 #import "WLDetailViewController.h"
+#import "WLObject.h"
+#import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 
 @interface WLMasterViewController () {
     NSMutableArray *_objects;
@@ -38,6 +40,8 @@
 
   UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
   self.navigationItem.rightBarButtonItem = addButton;
+  WLObject *object = [[WLObject alloc] init];
+  [object configureWithDictionary:nil];
 }
 
 - (void)didReceiveMemoryWarning
